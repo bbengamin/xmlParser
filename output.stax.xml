@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Fond>
+<Gem>
+<Name>Рубин</Name>
+<Preciousness>true</Preciousness>
+<Origin>Антрацит</Origin>
+<VisualParameters Faceting="6" Transparency="56" valueColor="red"/>
+<Value>2.2</Value>
+</Gem>
+<Gem>
+<Name>Аметист</Name>
+<Preciousness>true</Preciousness>
+<Origin>Лозовая</Origin>
+<VisualParameters Faceting="9" Transparency="89" valueColor="green"/>
+<Value>2.9</Value>
+</Gem>
+<Gem>
+<Name>Агат</Name>
+<Preciousness>false</Preciousness>
+<Origin>Ад</Origin>
+<VisualParameters Faceting="12" Transparency="15" valueColor="yellow"/>
+<Value>89.6</Value>
+</Gem>
+</Fond>

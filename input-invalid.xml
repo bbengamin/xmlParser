@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Input XML document. This XML is valid against Test.xsd XML schema-->
+
+<st3:Fond xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns:st3="http://nure.ua/bogdanov/SummaryTask3/entity"
+		xsi:schemaLocation="http://nure.ua/bogdanov/SummaryTask3/entity input.xsd">		
+		
+	<Gem>	
+		<Name>Рубин</Name>
+		<Preciousness>true</Preciousness>
+		<Origin>Антрацит</Origin>
+		<Value>2.2</Value>
+	</Gem>		
+	<Gem>	
+		<Preciousness>true</Preciousness>
+		<Origin>Лозовая</Origin>
+		<VisualParameters valueColor = "green" Transparency = "89" Faceting = "9"/>
+		<Value>2.9</Value>
+	</Gem>		
+	<Gem>	
+		<Preciousness>false</Preciousness>
+		<Origin>Ад</Origin>
+		<VisualParameters valueColor = "yellow" Transparency = "15" Faceting = "12"/>
+		<Value>89.6</Value>
+	</Gem>		
+</st3:Fond>

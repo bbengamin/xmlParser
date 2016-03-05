@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- XML schema -->
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://nure.ua/bogdanov/SummaryTask3/entity"
+	xmlns:tns="http://nure.ua/bogdanov/SummaryTask3/entity">
+
+	<xsd:element name="Fond">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="Gem" type="tns:Gem" minOccurs = "0"  maxOccurs="unbounded" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:complexType name="Gem">
+		<xsd:sequence>
+			<xsd:element name="Name" type="xsd:string" />
+			<xsd:element name="Preciousness" type="xsd:boolean"
+				default="true" />
+			<xsd:element name="Origin" type="xsd:string" />
+			<xsd:sequence>
+				<xsd:element name="VisualParameters" type="tns:VisualParameters"
+					maxOccurs="1" />
+			</xsd:sequence>
+			<xsd:element name="Value" type="xsd:double" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="VisualParameters">
+		<xsd:attribute name="valueColor" type="tns:enumColors"
+			default="white" />
+		<xsd:attribute name="Transparency" type="tns:Transparency" />
+		<xsd:attribute name="Faceting" type="tns:Faceting" />
+	</xsd:complexType>
+
+	<xsd:simpleType name="enumColors">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="green" />
+			<xsd:enumeration value="red" />
+			<xsd:enumeration value="white" />
+			<xsd:enumeration value="yellow" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+
+	<xsd:simpleType name="Transparency">
+		<xsd:restriction base="xsd:integer">
+			<xsd:minInclusive value="0" />
+			<xsd:maxInclusive value="100" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="Faceting">
+		<xsd:restriction base="xsd:integer">
+			<xsd:minInclusive value="4" />
+			<xsd:maxInclusive value="15" />
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>
